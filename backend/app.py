@@ -9,7 +9,5 @@ def index():
     return render_template("index.html", page = page)
     # return "<p>Hello, World!</p>"
 
-
-
 if __name__ == '__main__':
     app.run(debug=True)
