@@ -4,12 +4,48 @@
 <head>
     <meta charset="UTF8">
     <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="team" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
     <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/index-DLWeudx_.css') }}">
+    <script type="module" crossorigin src="{{ url_for('static', filename='assets/index-D9DPT9ri.js') }}"></script>
 </head>
 
 <body>
     <header>
+        <!-- MENU -->
+        <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+            <div class="container">
 
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                    </button>
+
+                  <!-- lOGO TEXT HERE -->
+                  <a href="index.html" class="navbar-brand">Справочник советской детской литературы</a>
+                </div>
+
+                <!-- MENU LINKS -->
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#home" class="smoothScroll">Справочник</a></li>
+                        <li><a href="#feature" class="smoothScroll">О справочнике</a></li>
+                        <li><a href="#about" class="smoothScroll">Команда</a></li>
+                        <li><a href="#pricing" class="smoothScroll">Лонгрид</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </section>
     </header>
 
     <main>
@@ -20,10 +56,13 @@
     </main>
 
     {% block footer %}
-        <footer>
-            created by Alex
+
+        <footer id="footer" data-stellar-background-ratio="0.5">
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/AMitiukova/project.git">Указатель Старцева: библиография советской детской литературы</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/AMitiukova">К. А. Маслинский, А. Арбузова, А. Митюкова, С. Рябова, В. Сидненко</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
         </footer>
+        
     {% endblock footer %}
 
+        
 </body>
 </html>

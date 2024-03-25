@@ -1,24 +1,14 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
-
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+import jQuery from 'jquery';
+window.$ = jQuery
+import "./js/bootstrap.min.js"
+import "jquery.stellar/jquery.stellar.js"
+import 'owl.carousel/dist/assets/owl.carousel.css'
+import 'owl.carousel'
+import "./js/smoothscroll.js"
+import "./js/custom.js"
+import "./css/bootstrap.min.css"
+import "./css/owl.carousel.css"
+import "./css/owl.theme.default.min.css"
+import "./css/font-awesome.min.css"
+import "./css/tooplate-style.css"
