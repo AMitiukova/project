@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF8">
     <meta name="veiwport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -10,13 +11,18 @@
     <meta name="team" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='assets/index-DLWeudx_.css') }}">
-    <script type="module" crossorigin src="{{ url_for('static', filename='assets/index-D9DPT9ri.js') }}"></script>
+    <title>Starcev_project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/index-CPRsHSNA.css') }}">
+    <script type="module" crossorigin src="{{ url_for('static', filename='assets/index-B7bdyNQ3.js') }}"></script>
+{% block head_script %}
+
+{% endblock head_script %}
 </head>
 
 <body>
     <header>
+    {% block header %}
+
         <!-- MENU -->
         <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
             <div class="container">
@@ -46,13 +52,13 @@
 
             </div>
         </section>
+    {% endblock header %}
     </header>
-
+    
     <main>
     {% block main %}
 
     {% endblock main %}
-
     </main>
 
     {% block footer %}
@@ -62,7 +68,6 @@
         </footer>
         
     {% endblock footer %}
-
         
 </body>
 </html>
